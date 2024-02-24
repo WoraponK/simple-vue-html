@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Title 1",
+        "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at.",
+        "image": "https://www.loudegg.com/wp-content/uploads/2020/10/Mickey-Mouse.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Title 2",
+        "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at.",
+        "image": "https://media.npr.org/assets/img/2011/08/17/fguy2006_stewie1_f_custom-35dba0539b1d4e9726d4d395a99df712673f5445.jpg"
+
+    },
+    {
+        "id": 3,
+        "title": "Title 3",
+        "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at.",
+        "image": "https://i.pinimg.com/564x/9b/a2/57/9ba25796112cad616be27e473ae1e149.jpg"
+
+    },
+    {
+        "id": 4,
+        "title": "Title 4",
+        "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at.",
+        "image": "https://cn.i.cdn.ti-platform.com/content/20/the-amazing-world-of-gumball/showpage/za/gumball-carousel.a94b8e60.png"
+    }
+]

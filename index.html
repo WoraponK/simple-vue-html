@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vuejs 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="display">
+            <div v-for="p in product">
+                <div class="card">
+                    <h2>{{ p.title }}</h2>
+                    <p>{{ p.des }}</p>
+                    <img :src="p.image" alt="">
+                    <button @click="viewProduct(p.id)">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                product: [],
+            },
+            methods: {
+                viewProduct(id) {
+                    const productSelected = this.product.find(p => p.id == id);
+                    const url = `products.html?id=${productSelected.id}`;
+                    window.open(url, '_self')
+                }
+            },
+            created() {
+                axios.get('./data.json')
+                    .then(res => {
+                        this.product = res.data
+                    })
+                    .catch((e) => {
+                        console.error(e)
+                    })
+            }
+        })
+    </script>
+</body>
+
+</html>

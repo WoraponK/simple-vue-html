@@ -1,0 +1,16 @@
+.card {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & img {
+        height: 200px;
+        width: 200px;
+    }
+
+    & button {
+        width: fit-content;
+    }
+}
