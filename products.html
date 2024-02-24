@@ -34,7 +34,7 @@
             data: {
                 title: "Products",
                 product: [],
-                proddd: []
+                p: []
             },
             created() {
                 axios.get('./data.json')
@@ -43,7 +43,7 @@
 
                         const productSelected = this.product.map(prod => {
                             if (prod.id == productId) {
-                                this.proddd = prod
+                                this.p = prod
                             }
                         });
 
